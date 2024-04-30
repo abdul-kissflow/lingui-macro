@@ -27,12 +27,20 @@ import { setupI18n } from "@lingui/core"
 import { defineMessage } from "@lingui/macro"
 
 const message = defineMessage`Hello, my name is {name}`;
-// line above is transformed using babel-plugin-macros to this string instead of MessageDescriptor
-// const message = `Hello, my name is {name}`;
+
+/**
+ * line above is transformed using babel-plugin-macros to string instead of MessageDescriptor
+ * 
+ * @lingui/macro:
+ * const message = {id:"msgId", message: "Hello, my name is {name}"};
+ * 
+ * lingui-macro:
+ * const message = `Hello, my name is {name}`;
+*/
 
 const i18n = setupI18n();
 
-const message = i18n._(label, {name: "Steve"})
+const translatedMessage = i18n._(message, {name: "Steve"})
 ```
 
 ## License

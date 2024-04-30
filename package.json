@@ -1,13 +1,13 @@
 {
   "name": "lingui-macro",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Macro for generating messages in ICU MessageFormat syntax",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./index.d.ts",
   "sideEffects": false,
   "author": {
-    "name": "abdul@kissflow",
+    "name": "abdul",
     "email": "abdul@kissflow.com"
   },
   "scripts": {
